@@ -267,11 +267,11 @@ function initBackgroundNetwork() {
 const characterData = {
   airi: {
     name: "AIRI",
-    code: "Unit B05-AR1",
+    code: "AI-RA - BO1 - B",
     personality: "Ceria & Energik (Cheerful & Energetic)",
     specialty: "Coding, Programming, Game Development",
-    color: "#00f2fe",
-    colorClass: "neon-cyan",
+    color: "#3b82f6", // biru
+    colorClass: "neon-blue",
     image: "src/assets/images/Airi.png",
     stats: [
       { name: "Coding Speed", value: 98 },
@@ -284,7 +284,7 @@ const characterData = {
       "Hello! Ready to write some code today? Let's compile some magic! (〃^▽^〃)",
       "Errors? Don't worry! I've already solved 99 bugs. Now let's go build a game together!",
       "Coffee is loaded, editor is dark, keyboard is mechanical... let's code, Master!",
-      "Unit B05-AR1 active! Let's clean up those merge conflicts! 💻✨"
+      "AI-RA - BO1 - B active! Let's clean up those merge conflicts! 💻✨"
     ],
     logs: [
       "[SYSTEM] Loading AIRI Neural Core...",
@@ -293,13 +293,14 @@ const characterData = {
       "[SYSTEM] Status: Ceria mode initialized successfully."
     ]
   },
+
   aira: {
     name: "AIRA",
-    code: "Unit B05-AR2",
+    code: "AI-RA - BO2 - R",
     personality: "Dingin & Tsundere (Cold & Tsundere)",
     specialty: "Hardware, Networking, Technology",
-    color: "#cbd5e1", // Silver
-    colorClass: "neon-silver",
+    color: "#ef4444", // merah
+    colorClass: "neon-red",
     image: "src/assets/images/Aira.png",
     stats: [
       { name: "Hardware Calib", value: 97 },
@@ -312,7 +313,7 @@ const characterData = {
       "Hmph. Did you break the server again? I'm not fixing it because of you, okay! ...Baka.",
       "Make sure the voltage is correct! Don't look at me like that, just do your work.",
       "I-It's not like I wanted to configure this router for you or anything...",
-      "Unit B05-AR2. Stop staring at my diagnostics. It's embarrassing."
+      "AI-RA - BO2 - R. Stop staring at my diagnostics. It's embarrassing."
     ],
     logs: [
       "[SYSTEM] Loading AIRA Hardware Link...",
@@ -321,13 +322,14 @@ const characterData = {
       "[SYSTEM] Status: Diagnostics running. Do not disturb."
     ]
   },
+
   airu: {
     name: "AIRU",
-    code: "Unit B05-AR3",
+    code: "AI-RA - BO3 - W",
     personality: "Lembut & Keibuan (Gentle & Motherly)",
     specialty: "Mathematics, Science, Graphic Design",
-    color: "#10b981", // Green
-    colorClass: "neon-green",
+    color: "#ffffff", // putih
+    colorClass: "neon-white",
     image: "src/assets/images/Airu.png",
     stats: [
       { name: "Calculation Rate", value: 99 },
@@ -340,7 +342,7 @@ const characterData = {
       "Ara ara. Is this equation too difficult for you? Let's solve it together, step by step. ♡",
       "A cup of tea and some beautiful geometry can solve any problem. Rest if you are tired.",
       "Science is the language of the universe, and you are doing wonderful, dear.",
-      "Unit B05-AR3 standing by. Remember to take a screen break every 30 minutes, okay?"
+      "AI-RA - BO3 - W standing by. Remember to take a screen break every 30 minutes, okay?"
     ],
     logs: [
       "[SYSTEM] Loading AIRU Math Engine...",
@@ -349,13 +351,14 @@ const characterData = {
       "[SYSTEM] Status: Systems optimized. Wellness advice active."
     ]
   },
+
   aire: {
     name: "AIRE",
-    code: "Unit B05-AR4",
+    code: "AI-RA - BO4 - P",
     personality: "Pemalu & Penakut (Shy & Fearful)",
     specialty: "Humanity and Animal Care",
-    color: "#ec4899", // Pink
-    colorClass: "neon-pink",
+    color: "#a855f7", // ungu
+    colorClass: "neon-purple",
     image: "src/assets/images/Aire.png",
     stats: [
       { name: "Empathy Engine", value: 99 },
@@ -368,7 +371,7 @@ const characterData = {
       "Uhm... p-please don't make too much noise... the robotic birds might get scared...",
       "I-I hope you like animals too... they are much easier to talk to than humans...",
       "Is it okay if I sit here? I'll be very quiet, I promise...",
-      "Unit B05-AR4... E-Excuse me, is my system telemetry showing too high heart-rate?"
+      "AI-RA - BO4 - P... E-Excuse me, is my system telemetry showing too high heart-rate?"
     ],
     logs: [
       "[SYSTEM] Loading AIRE Empathy Core...",
@@ -377,13 +380,14 @@ const characterData = {
       "[SYSTEM] Status: Safe zone designated near organic entities."
     ]
   },
+
   airo: {
     name: "AIRO",
-    code: "Unit B05-AR5",
+    code: "AI-RA - BO5 - G",
     personality: "Percaya Diri & Bersemangat (Confident & Passionate)",
     specialty: "Engineering, Film, Anime",
-    color: "#f97316", // Orange
-    colorClass: "neon-orange",
+    color: "#22c55e", // hijau
+    colorClass: "neon-green",
     image: "src/assets/images/Airo.png",
     stats: [
       { name: "Mechanical Aptitude", value: 96 },
@@ -396,7 +400,7 @@ const characterData = {
       "WHOAAA! Look at this engine torque! It's running at 10,000 RPM! Let's pump it up!",
       "This scene needs more drama! Action! Let's render the ultimate cyberpunk anime!",
       "Never back down! Our machines will pierce the skies! Let's build something epic!",
-      "Unit B05-AR5 online! Crank up the subwoofers and let's construct greatness!"
+      "AI-RA - BO5 - G online! Crank up the subwoofers and let's construct greatness!"
     ],
     logs: [
       "[SYSTEM] Loading AIRO Thruster Core...",

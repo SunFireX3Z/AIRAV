@@ -359,8 +359,8 @@
         </p>
       </div>
 
-      <!-- Five character selector cards -->
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12 reveal">
+      <!-- Six character selector cards -->
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-4 mb-12 reveal">
         
         <!-- Airi Selector -->
         <button data-char-id="airi" class="char-card-btn group text-left p-4 rounded-xl border border-blue-500/20 bg-cyber-dark/40 hover:bg-blue-950/10 hover:border-blue-400 hover:shadow-[0_0_15px_rgba(59,130,246,0.15)] transition-all duration-300 flex flex-col justify-between h-40 relative overflow-hidden">
@@ -424,6 +424,22 @@
           <div class="mt-auto">
             <span class="font-orbitron font-bold text-green-300 text-lg tracking-wider">AIRO</span>
             <span class="block text-[10px] font-mono text-green-400/80 mt-0.5 font-bold">Engineering / Art</span>
+          </div>
+        </button>
+
+        <!-- Aizia Selector -->
+        <button data-char-id="aizia" class="char-card-btn border-gradient-orange-blue group text-left p-4 rounded-xl transition-all duration-300 flex flex-col justify-between h-40 relative overflow-hidden">
+          <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-gradient-to-br from-orange-500/5 to-blue-500/5 group-hover:from-orange-500/10 group-hover:to-blue-500/10 rounded-full blur-xl transition-all"></div>
+          <div class="flex justify-between items-start w-full">
+            <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500/10 to-blue-500/10 flex items-center justify-center text-orange-300 font-mono text-sm font-bold">06</span>
+            <div class="flex gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-orange-400 shadow-[0_0_8px_rgba(249,115,22,0.8)]"></span>
+              <span class="w-2 h-2 rounded-full bg-blue-400 shadow-[0_0_8px_rgba(59,130,246,0.8)]"></span>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <span class="font-orbitron font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-blue-400 text-lg tracking-wider">AIZIA</span>
+            <span class="block text-[10px] font-mono text-orange-400/80 mt-0.5 font-bold">Neural / Cyber</span>
           </div>
         </button>
 
@@ -497,22 +513,59 @@
               </div>
             </div>
 
-            <!-- Stats Bar Display -->
-            <div class="space-y-3">
-              <h5 class="text-xs font-mono font-bold text-slate-500 uppercase tracking-wider"><i class="fas fa-chart-line mr-1"></i> System Parameters</h5>
-              <div id="showcase-stats" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Programmatically populated inside main.js -->
+            <!-- Showcase Tabs -->
+            <div class="flex border-b border-white/5 gap-4 md:gap-6 text-xs font-mono pb-1 mb-4">
+              <button id="showcase-tab-params" class="showcase-tab-btn pb-2 font-bold text-cyan-400 border-b-2 border-cyan-500 transition-all cursor-pointer" data-tab="params">
+                <i class="fas fa-microchip mr-1.5"></i>PARAMETERS
+              </button>
+              <button id="showcase-tab-profile" class="showcase-tab-btn pb-2 font-bold text-slate-400 border-b-2 border-transparent hover:text-white transition-all cursor-pointer" data-tab="profile">
+                <i class="fas fa-id-card mr-1.5"></i>PROFILE & ROLE
+              </button>
+              <button id="showcase-tab-neural" class="showcase-tab-btn pb-2 font-bold text-slate-400 border-b-2 border-transparent hover:text-white transition-all cursor-pointer" data-tab="neural">
+                <i class="fas fa-network-wired mr-1.5"></i>NEURAL LINK
+              </button>
+            </div>
+
+            <!-- Tab 1: Stats & Logs -->
+            <div id="showcase-content-params" class="showcase-tab-content space-y-4">
+              <!-- Stats Bar Display -->
+              <div class="space-y-3">
+                <h5 class="text-xs font-mono font-bold text-slate-500 uppercase tracking-wider"><i class="fas fa-chart-line mr-1"></i> System Parameters</h5>
+                <div id="showcase-stats" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <!-- Programmatically populated inside main.js -->
+                </div>
+              </div>
+
+              <!-- Terminal logs simulator -->
+              <div class="space-y-2 mt-2">
+                <h5 class="text-xs font-mono font-bold text-slate-500 uppercase tracking-wider flex justify-between">
+                  <span><i class="fas fa-terminal mr-1"></i> Sync Telemetry Logs</span>
+                  <span class="text-[9px] text-cyan-400 font-normal">REALTIME DIAGNOSTICS</span>
+                </h5>
+                <div id="showcase-logs" class="w-full h-24 rounded-lg bg-slate-950/80 border border-white/5 p-3 font-mono text-[10px] text-slate-400 overflow-y-auto space-y-1">
+                  <!-- Programmatically populated -->
+                </div>
               </div>
             </div>
 
-            <!-- Terminal logs simulator -->
-            <div class="space-y-2 mt-2">
-              <h5 class="text-xs font-mono font-bold text-slate-500 uppercase tracking-wider flex justify-between">
-                <span><i class="fas fa-terminal mr-1"></i> Sync Telemetry Logs</span>
-                <span class="text-[9px] text-cyan-400 font-normal">REALTIME DIAGNOSTICS</span>
-              </h5>
-              <div id="showcase-logs" class="w-full h-24 rounded-lg bg-slate-950/80 border border-white/5 p-3 font-mono text-[10px] text-slate-400 overflow-y-auto space-y-1">
-                <!-- Programmatically populated -->
+            <!-- Tab 2: Detailed Profile & Role -->
+            <div id="showcase-content-profile" class="showcase-tab-content space-y-4 hidden">
+              <div class="space-y-2">
+                <h5 class="text-xs font-mono font-bold text-slate-500 uppercase tracking-wider"><i class="fas fa-user-tag mr-1"></i> Deskripsi Unit</h5>
+                <p id="showcase-description" class="text-sm text-slate-300 leading-relaxed font-space"></p>
+              </div>
+
+              <div class="space-y-2">
+                <h5 class="text-xs font-mono font-bold text-slate-500 uppercase tracking-wider"><i class="fas fa-cogs mr-1"></i> Peran & Fungsi Utama</h5>
+                <p id="showcase-role" class="text-sm text-slate-300 leading-relaxed font-space"></p>
+              </div>
+            </div>
+
+            <!-- Tab 3: Neural Relationships -->
+            <div id="showcase-content-neural" class="showcase-tab-content space-y-4 hidden">
+              <h5 class="text-xs font-mono font-bold text-slate-500 uppercase tracking-wider"><i class="fas fa-share-alt mr-1"></i> Koneksi Antar AI-RA Unit</h5>
+              <div id="showcase-relationships" class="space-y-3 max-h-56 overflow-y-auto pr-1">
+                <!-- Programmatically populated inside main.js -->
               </div>
             </div>
 
@@ -522,6 +575,132 @@
               <button id="showcase-talk-btn" class="px-5 py-2.5 rounded-lg border font-space font-medium text-xs tracking-wider transition-all duration-300 flex items-center gap-2 cursor-pointer">
                 <i class="fas fa-microphone"></i>Hubungkan Koneksi (Talk)
               </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Showcase Skeleton Loader (Shown during neural sync loading) -->
+        <div id="showcase-skeleton" class="w-full rounded-2xl glass-panel p-6 md:p-8 flex flex-col lg:flex-row gap-8 items-stretch border-2 transition-all duration-500 hidden animate-pulse">
+          
+          <!-- Column 1: Portrait / Graphic Feed Skeleton -->
+          <div class="lg:w-1/3 flex flex-col items-center justify-center relative bg-slate-950/50 rounded-xl border border-white/5 p-4 overflow-hidden">
+            <!-- Cyber overlay scanlines -->
+            <div class="absolute inset-0 cyber-overlay pointer-events-none opacity-20"></div>
+            
+            <div class="absolute top-2 left-2 text-[8px] font-mono text-slate-600">SYS.CAM_INPUT.B05_CONNECTING</div>
+            <div class="absolute top-2 right-2 flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-500/40 animate-ping"></span>
+              <span class="text-[8px] font-mono text-cyan-500/50 uppercase tracking-wider">SYNCING</span>
+            </div>
+
+            <!-- Avatar box placeholder -->
+            <div class="w-full max-w-[260px] aspect-square rounded-xl overflow-hidden border border-white/5 shadow-2xl relative bg-slate-900/60 flex items-center justify-center">
+              <div class="w-full h-full skeleton-item"></div>
+            </div>
+
+            <!-- Speech bubble dialog placeholder -->
+            <div class="w-full mt-4 p-4 rounded-lg bg-cyber-dark/60 border border-white/5 relative flex flex-col gap-2 items-center">
+              <div class="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-cyber-dark/60 border-t border-l border-white/5 rotate-45"></div>
+              <div class="h-3 w-4/5 skeleton-item"></div>
+              <div class="h-3 w-3/5 skeleton-item"></div>
+            </div>
+            
+            <!-- Voice Wave Simulation Placeholder -->
+            <div class="w-full mt-5 flex items-center justify-center gap-1 h-6 opacity-30">
+              <div class="w-1 h-2 bg-slate-800 rounded"></div>
+              <div class="w-1 h-3 bg-slate-800 rounded"></div>
+              <div class="w-1 h-4 bg-slate-800 rounded"></div>
+              <div class="w-1 h-3 bg-slate-800 rounded"></div>
+              <div class="w-1 h-5 bg-slate-800 rounded"></div>
+              <div class="w-1 h-2 bg-slate-800 rounded"></div>
+              <div class="w-1 h-4 bg-slate-800 rounded"></div>
+              <div class="w-1 h-5 bg-slate-800 rounded"></div>
+              <div class="w-1 h-2 bg-slate-800 rounded"></div>
+            </div>
+          </div>
+
+          <!-- Column 2: Information and Technical Specs Skeleton -->
+          <div class="lg:w-2/3 flex flex-col justify-between gap-6">
+            
+            <div class="space-y-4">
+              <!-- Meta Tags placeholders -->
+              <div class="flex flex-wrap items-center gap-3">
+                <div class="h-6 w-36 skeleton-item"></div>
+                <div class="h-6 w-24 skeleton-item"></div>
+              </div>
+
+              <!-- Main Name & Specialty placeholders -->
+              <div class="space-y-3">
+                <div class="h-10 w-44 skeleton-item"></div>
+                <div class="h-4 w-72 skeleton-item"></div>
+              </div>
+
+              <!-- Personality Badge placeholder -->
+              <div class="flex items-center gap-2 border-b border-white/5 pb-4">
+                <div class="h-4 w-32 skeleton-item"></div>
+                <div class="h-4 w-40 skeleton-item"></div>
+              </div>
+            </div>
+
+            <!-- Stats Bar Display placeholders -->
+            <div class="space-y-4">
+              <div class="h-3 w-40 skeleton-item"></div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="space-y-2">
+                  <div class="flex justify-between">
+                    <div class="h-3 w-24 skeleton-item"></div>
+                    <div class="h-3 w-8 skeleton-item"></div>
+                  </div>
+                  <div class="w-full bg-slate-900 rounded-full h-1.5">
+                    <div class="h-full bg-slate-800 rounded-full w-4/5"></div>
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <div class="flex justify-between">
+                    <div class="h-3 w-28 skeleton-item"></div>
+                    <div class="h-3 w-8 skeleton-item"></div>
+                  </div>
+                  <div class="w-full bg-slate-900 rounded-full h-1.5">
+                    <div class="h-full bg-slate-800 rounded-full w-2/3"></div>
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <div class="flex justify-between">
+                    <div class="h-3 w-20 skeleton-item"></div>
+                    <div class="h-3 w-8 skeleton-item"></div>
+                  </div>
+                  <div class="w-full bg-slate-900 rounded-full h-1.5">
+                    <div class="h-full bg-slate-800 rounded-full w-3/4"></div>
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <div class="flex justify-between">
+                    <div class="h-3 w-32 skeleton-item"></div>
+                    <div class="h-3 w-8 skeleton-item"></div>
+                  </div>
+                  <div class="w-full bg-slate-900 rounded-full h-1.5">
+                    <div class="h-full bg-slate-800 rounded-full w-1/2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Terminal logs simulator placeholder -->
+            <div class="space-y-2 mt-2">
+              <div class="h-3 w-44 skeleton-item"></div>
+              <div class="w-full h-24 rounded-lg bg-slate-950/80 border border-white/5 p-3 space-y-2.5">
+                <div class="h-3 w-11/12 skeleton-item"></div>
+                <div class="h-3 w-4/5 skeleton-item"></div>
+                <div class="h-3 w-5/6 skeleton-item"></div>
+              </div>
+            </div>
+
+            <!-- Bottom controls placeholder -->
+            <div class="flex justify-between items-center border-t border-white/5 pt-4 mt-2">
+              <div class="h-3 w-48 skeleton-item"></div>
+              <div class="h-10 w-44 skeleton-item rounded-lg"></div>
             </div>
 
           </div>
@@ -691,12 +870,12 @@
       </div>
 
       <!-- Gallery Grid -->
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 reveal-delay-2">
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-4 md:gap-6 reveal-delay-2">
         
         <!-- Gallery Item 1 -->
-        <div class="gallery-item group relative aspect-square rounded-2xl overflow-hidden glass-panel border border-blue-500/20 cursor-pointer shadow-lg hover:shadow-blue-400/20 transition-all duration-300" data-char-id="airi">
+        <div class="gallery-item group relative aspect-[3/4] rounded-2xl overflow-hidden glass-panel border border-blue-500/20 cursor-pointer shadow-lg hover:shadow-blue-400/20 transition-all duration-300" data-char-id="airi">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-60 z-10 group-hover:opacity-30 transition-opacity"></div>
-          <img src="src/assets/images/AiriSq.png" alt="Airi Unit Illustration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <img src="src/assets/images/Airi.png" alt="Airi Unit Illustration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
           <div class="absolute bottom-4 left-4 right-4 z-20 transition-transform duration-300 group-hover:translate-y-[-4px]">
             <span class="text-[9px] font-mono text-blue-400 uppercase font-bold tracking-widest">UNIT 01 // CODESET</span>
             <h4 class="font-space font-bold text-blue-300 text-base mt-0.5">AIRI</h4>
@@ -707,9 +886,9 @@
         </div>
 
         <!-- Gallery Item 2 -->
-        <div class="gallery-item group relative aspect-square rounded-2xl overflow-hidden glass-panel border border-red-500/20 cursor-pointer shadow-lg hover:shadow-red-400/20 transition-all duration-300" data-char-id="aira">
+        <div class="gallery-item group relative aspect-[3/4] rounded-2xl overflow-hidden glass-panel border border-red-500/20 cursor-pointer shadow-lg hover:shadow-red-400/20 transition-all duration-300" data-char-id="aira">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-60 z-10 group-hover:opacity-30 transition-opacity"></div>
-          <img src="src/assets/images/AiraSq.png" alt="Aira Unit Illustration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <img src="src/assets/images/Aira.png" alt="Aira Unit Illustration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
           <div class="absolute bottom-4 left-4 right-4 z-20 transition-transform duration-300 group-hover:translate-y-[-4px]">
             <span class="text-[9px] font-mono text-red-400 uppercase font-bold tracking-widest">UNIT 02 // HARDWARE</span>
             <h4 class="font-space font-bold text-red-300 text-base mt-0.5">AIRA</h4>
@@ -720,9 +899,9 @@
         </div>
 
         <!-- Gallery Item 3 -->
-        <div class="gallery-item group relative aspect-square rounded-2xl overflow-hidden glass-panel border border-white/20 cursor-pointer shadow-lg hover:shadow-white/10 transition-all duration-300" data-char-id="airu">
+        <div class="gallery-item group relative aspect-[3/4] rounded-2xl overflow-hidden glass-panel border border-white/20 cursor-pointer shadow-lg hover:shadow-white/10 transition-all duration-300" data-char-id="airu">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-60 z-10 group-hover:opacity-30 transition-opacity"></div>
-          <img src="src/assets/images/AiruSq.png" alt="Airu Unit Illustration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <img src="src/assets/images/Airu.png" alt="Airu Unit Illustration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
           <div class="absolute bottom-4 left-4 right-4 z-20 transition-transform duration-300 group-hover:translate-y-[-4px]">
             <span class="text-[9px] font-mono text-white uppercase font-bold tracking-widest">UNIT 03 // METRIC</span>
             <h4 class="font-space font-bold text-white text-base mt-0.5">AIRU</h4>
@@ -733,9 +912,9 @@
         </div>
 
         <!-- Gallery Item 4 -->
-        <div class="gallery-item group relative aspect-square rounded-2xl overflow-hidden glass-panel border border-purple-500/20 cursor-pointer shadow-lg hover:shadow-purple-400/20 transition-all duration-300" data-char-id="aire">
+        <div class="gallery-item group relative aspect-[3/4] rounded-2xl overflow-hidden glass-panel border border-purple-500/20 cursor-pointer shadow-lg hover:shadow-purple-400/20 transition-all duration-300" data-char-id="aire">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-60 z-10 group-hover:opacity-30 transition-opacity"></div>
-          <img src="src/assets/images/AireSq.png" alt="Aire Unit Illustration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <img src="src/assets/images/Aire.png" alt="Aire Unit Illustration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
           <div class="absolute bottom-4 left-4 right-4 z-20 transition-transform duration-300 group-hover:translate-y-[-4px]">
             <span class="text-[9px] font-mono text-purple-400 uppercase font-bold tracking-widest">UNIT 04 // BIOCARE</span>
             <h4 class="font-space font-bold text-purple-300 text-base mt-0.5">AIRE</h4>
@@ -746,15 +925,28 @@
         </div>
 
         <!-- Gallery Item 5 -->
-        <div class="gallery-item group relative aspect-square rounded-2xl overflow-hidden glass-panel border border-green-500/20 cursor-pointer shadow-lg hover:shadow-green-400/20 transition-all duration-300" data-char-id="airo">
+        <div class="gallery-item group relative aspect-[3/4] rounded-2xl overflow-hidden glass-panel border border-green-500/20 cursor-pointer shadow-lg hover:shadow-green-400/20 transition-all duration-300" data-char-id="airo">
           <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-60 z-10 group-hover:opacity-30 transition-opacity"></div>
-          <img src="src/assets/images/AiroSq.png" alt="Airo Unit Illustration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <img src="src/assets/images/Airo.png" alt="Airo Unit Illustration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
           <div class="absolute bottom-4 left-4 right-4 z-20 transition-transform duration-300 group-hover:translate-y-[-4px]">
             <span class="text-[9px] font-mono text-green-400 uppercase font-bold tracking-widest">UNIT 05 // MECHANIC</span>
             <h4 class="font-space font-bold text-green-300 text-base mt-0.5">AIRO</h4>
           </div>
           <div class="absolute top-4 right-4 z-20 w-8 h-8 rounded-lg bg-cyber-dark/80 backdrop-blur border border-white/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
             <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+          </div>
+        </div>
+
+        <!-- Gallery Item 6 (Aizia) -->
+        <div class="gallery-item border-gradient-orange-blue-gallery group relative aspect-[3/4] rounded-2xl overflow-hidden cursor-pointer shadow-lg transition-all duration-300" data-char-id="aizia">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-60 z-10 group-hover:opacity-30 transition-opacity"></div>
+          <img src="src/assets/images/Aizia.png" alt="Aizia Unit Illustration" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute bottom-4 left-4 right-4 z-20 transition-transform duration-300 group-hover:translate-y-[-4px]">
+            <span class="text-[9px] font-mono text-orange-400 uppercase font-bold tracking-widest">UNIT 06 // NEURAL STATE</span>
+            <h4 class="font-space font-bold text-orange-300 text-base mt-0.5">AIZIA</h4>
+          </div>
+          <div class="absolute top-4 right-4 z-20 w-8 h-8 rounded-lg bg-cyber-dark/80 backdrop-blur border border-white/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+            <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
           </div>
         </div>
 
@@ -989,7 +1181,7 @@ socket.onmessage = (event) => {
       </div>
 
       <!-- Main lightbox image -->
-      <div class="aspect-square w-full bg-slate-950 border-b border-white/5">
+      <div class="aspect-[3/4] w-full bg-slate-950 border-b border-white/5">
         <img id="lightbox-img" src="" alt="Lightbox image view" class="w-full h-full object-cover">
       </div>
 

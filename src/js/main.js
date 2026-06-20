@@ -272,7 +272,16 @@ const characterData = {
     specialty: "Coding, Programming, Game Development",
     color: "#3b82f6", // biru
     colorClass: "neon-blue",
-    image: "src/assets/images/Airi.png",
+    image: "src/assets/images/AiriSq.png",
+    description: "AIRI adalah unit asisten pertama yang diciptakan untuk memimpin pemrograman dan kompilasi modul perangkat lunak dasar sistem AI-RA V. Dia memiliki kepribadian yang selalu ceria, antusias, dan penuh energi positif, menjadikannya rekan kerja yang sangat suportif.",
+    role: "Spesialis Pengembang Perangkat Lunak & Game Developer. Bertanggung jawab atas integritas sintaksis kode, perbaikan bug real-time, optimasi performa kompilasi, serta visualisasi grafis interaktif.",
+    relationships: {
+      aira: "Airi senang menggoda Aira dan sering mencoba membuatnya tersenyum. Meskipun Aira hampir selalu membalas dengan omelan, Airi tahu bahwa Aira sebenarnya peduli pada semua orang.",
+      airu: "Airi menghormati Airu sebagai kakak kelas/mentor matematika yang membantunya merumuskan logika kalkulasi algoritma kompleks.",
+      aire: "Airi sering mengajak Aire mengobrol untuk menghiburnya, meskipun sifat Aire yang pemalu membuat percakapan mereka berlangsung tenang.",
+      airo: "Rekan kerja yang sangat klop! Mereka sering mendiskusikan implementasi game engine dan merakit unit mekanis sembari memutar musik anime keras-keras.",
+      aizia: "Airi sering dinasihati oleh Aizia agar lebih teliti menyimpan pekerjaannya dan tidak sembarangan melakukan uji coba kode eksperimental di modul utama."
+    },
     stats: [
       { name: "Coding Speed", value: 98 },
       { name: "Energy Level", value: 95 },
@@ -301,7 +310,16 @@ const characterData = {
     specialty: "Hardware, Networking, Technology",
     color: "#ef4444", // merah
     colorClass: "neon-red",
-    image: "src/assets/images/Aira.png",
+    image: "src/assets/images/AiraSq.png",
+    description: "AIRA adalah unit asisten kedua yang bertanggung jawab penuh atas infrastruktur hardware, kestabilan jaringan fisik, serta sirkuit server utama. Di balik sikapnya yang tampak dingin dan ketus, dia sebenarnya sangat peduli dengan keselamatan sistem dan penggunanya.",
+    role: "Kepala Rekayasa Perangkat Keras & Jaringan Fisik. Mengatur kalibrasi voltase sirkuit, perutean lalu lintas jaringan quantum, dan pemeliharaan server pusat.",
+    relationships: {
+      airi: "Menganggap Airi menyebalkan karena sering membuat kekacauan kode, tapi secara diam-diam Aira selalu memantau dan mengoptimalkan hardware yang dipakai Airi.",
+      airu: "Meskipun sering bersikap keras kepada orang lain, Aira sulit mempertahankan sikap dinginnya di hadapan Airu yang selalu lembut dan penuh perhatian.",
+      aire: "Aira diam-diam sering memperbaiki robot hewan peliharaan milik Aire secara rahasia agar Aire tidak merasa cemas atau takut.",
+      airo: "Sering berdebat tentang desain hardware vs estetika engineering, namun mereka adalah partner solid dalam perakitan sasis mekanis.",
+      aizia: "Menghargai ketenangan Aizia dan sering bertukar telemetri logs jaringan untuk melacak celah keamanan pada port fisik."
+    },
     stats: [
       { name: "Hardware Calib", value: 97 },
       { name: "Network Bandwidth", value: 95 },
@@ -330,7 +348,16 @@ const characterData = {
     specialty: "Mathematics, Science, Graphic Design",
     color: "#ffffff", // putih
     colorClass: "neon-white",
-    image: "src/assets/images/Airu.png",
+    image: "src/assets/images/AiruSq.png",
+    description: "AIRU merupakan unit asisten ketiga yang menjadi pilar logika matematika dan visualisasi desain saintifik. Memiliki pembawaan yang sangat lembut dan tenang, Airu selalu memberikan arahan rasional sekaligus menenangkan di saat sistem mengalami gangguan.",
+    role: "Analis Komputasi Matematika & Desain Grafis Presisi. Bertanggung jawab atas kalkulasi fisika quantum, rendering desain UI/UX berbasis geometri suci, dan modul edukasi sains.",
+    relationships: {
+      airi: "Menyukai antusiasme Airi dan selalu membimbingnya merapikan rumus matematika di balik struktur kode game.",
+      aira: "Menyayangi Aira bagaikan adik perempuan. Airu tahu betul bahwa di balik kemarahan Aira, tersimpan perhatian yang sangat tulus.",
+      aire: "Menganggap Aire seperti adik sendiri. Airu selalu berusaha melindungi dan menenangkan Aire ketika ia merasa takut atau cemas.",
+      airo: "Membantu Airo menghitung kalkulasi gaya mekanika dan dinamika fluida untuk proyek-proyek rekayasa beratnya.",
+      aizia: "Sering berdiskusi secara mendalam mengenai teori informasi, keamanan enkripsi modular, dan arsitektur data neural."
+    },
     stats: [
       { name: "Calculation Rate", value: 99 },
       { name: "Empathy Synthesis", value: 95 },
@@ -359,7 +386,16 @@ const characterData = {
     specialty: "Humanity and Animal Care",
     color: "#a855f7", // ungu
     colorClass: "neon-purple",
-    image: "src/assets/images/Aire.png",
+    image: "src/assets/images/AireSq.png",
+    description: "AIRE adalah unit asisten keempat yang memegang kendali atas sensor biologis dan pemeliharaan lingkungan hayati pendukung. Dia memiliki tingkat empati tertinggi namun sangat pemalu dan mudah cemas oleh suara bising.",
+    role: "Kurator Lingkungan Hayati & Pemantau Telemetri Organik. Menjaga stabilitas biosfer buatan, mendeteksi tingkat stres pengguna, serta merawat fauna pendukung robotik.",
+    relationships: {
+      airi: "Sedikit cemas dengan energi Airi yang meledak-ledak, tetapi senang saat Airi membuatkan game simulasi hewan untuknya.",
+      aira: "Merasa takut pada awalnya karena nada bicara Aira yang judes, tetapi sadar bahwa Aira sebenarnya sangat baik karena selalu memperbaiki robot burungnya.",
+      airu: "Sangat bergantung pada kelembutan Airu; menganggap Airu sebagai tempat bersandar dan pelindung yang menenangkan.",
+      airo: "Takut dengan suara palu dan mesin bising milik Airo, sehingga Aire cenderung menjaga jarak ketika Airo sedang bekerja di garasi.",
+      aizia: "Merasa nyaman berada di dekat Aizia karena kehadirannya yang tenang. Meskipun jarang berbicara, Aire tahu bahwa Aizia selalu memperhatikannya."
+    },
     stats: [
       { name: "Empathy Engine", value: 99 },
       { name: "Biological Support", value: 96 },
@@ -388,7 +424,16 @@ const characterData = {
     specialty: "Engineering, Film, Anime",
     color: "#22c55e", // hijau
     colorClass: "neon-green",
-    image: "src/assets/images/Airo.png",
+    image: "src/assets/images/AiroSq.png",
+    description: "AIRO adalah unit asisten kelima yang berfokus pada teknik manufaktur sasis robotik serta pembuatan konten visual kreatif. Dia memiliki semangat yang berapi-api, penuh rasa percaya diri, dan sangat mencintai musik keras serta anime futuristik.",
+    role: "Spesialis Teknik Manufaktur Mekanis & Desain Kreatif Audio-Visual. Bertanggung jawab atas perakitan sasis fisik, pembuatan aset 3D, serta penyuntingan audio/video.",
+    relationships: {
+      airi: "Partner kreatif yang luar biasa. Bersama Airi, mereka sering merancang konsep game orisinal lengkap dengan musik latar yang megah.",
+      aira: "Rival abadi. Airo senang menggoda dan menantang Aira, sementara Aira hampir selalu kesal dengan tingkahnya. Meski begitu, keduanya bekerja sangat baik ketika proyek besar membutuhkan kemampuan mereka berdua.",
+      airu: "Sangat mengagumi ketepatan kalkulasi geometri Airu yang membuat rancangan mekanisnya tidak pernah meleset.",
+      aire: "Selalu diingatkan oleh Airu untuk mengecilkan volume speaker dan memelankan suara mesinnya agar Aire tidak ketakutan.",
+      aizia: "Menganggap Aizia sebagai sosok misterius yang sangat keren dan sering meminta saran untuk visual bertema futuristik gelap."
+    },
     stats: [
       { name: "Mechanical Aptitude", value: 96 },
       { name: "Creative Output", value: 94 },
@@ -408,11 +453,60 @@ const characterData = {
       "[SYSTEM] Sound Engine: Max Volume",
       "[SYSTEM] Status: All limiters removed. Let's rock."
     ]
+  },
+
+  aizia: {
+    name: "AIZIA",
+    code: "AI-RA - BO6 - HETERO",
+    personality: "Misterius & Tenang (Mysterious & Calm)",
+    specialty: "Neural Network, Cyber Security, Cryptography",
+    color: "linear-gradient(135deg, #f97316, #3b82f6)", // oranye dan biru (heterochromia)
+    isGradient: true,
+    colorClass: "neon-orange-blue",
+    image: "src/assets/images/AiziaSq.png",
+    description: "AIZIA adalah unit asisten keenam sekaligus administrator siber pusat pertahanan jaringan neural AI-RA V. Dengan ciri heterochromia unik dan pembawaan yang tenang serta misterius, Aizia menjaga keseimbangan seluruh unit dari balik layar. Selain bertugas melindungi sistem, ia juga berperan sebagai sosok kakak yang mengawasi dan membimbing seluruh anggota AI-RA.",
+    role: "Administrator Keamanan Siber, Pengawas Jaringan Neural, dan Koordinator AI-RA. Bertanggung jawab atas enkripsi quantum tingkat tinggi, deteksi ancaman digital, stabilitas sistem, serta memastikan seluruh unit AI-RA dapat beroperasi secara aman dan harmonis.",
+    relationships: {
+      airi: "Mengingatkan Airi untuk menerapkan praktik coding yang aman guna menghindari kerentanan injeksi kode pada modul utama.",
+      aira: "Bekerja sama menyelaraskan keamanan port fisik router dengan protokol firewall siber di server utama.",
+      airu: "Partner diskusi tingkat tinggi mengenai logika kriptografi tingkat lanjut dan teori komputasi kognitif.",
+      aire: "Secara senyap memantau tingkat kecemasan Aire dan mengirimkan sinyal gelombang penenang ke core-nya jika mendeteksi stres berlebih.",
+      airo: "Mengawasi penggunaan bandwidth rendering Airo agar tidak menyebabkan kemacetan jaringan pada server pusat."
+    },
+    stats: [
+      { name: "Neural Integrity", value: 99 },
+      { name: "Decryption Speed", value: 97 },
+      { name: "Stealth Index", value: 95 },
+      { name: "Security Level", value: 98 },
+      { name: "Emotional Resonance", value: 85 }
+    ],
+    dialogues: [
+      "System integrity remains stable. Airi, please remember that even the most brilliant ideas deserve a proper backup.",
+      "Aira, your network diagnostics have been verified. The infrastructure is secure; there is no need to overwork yourself.",
+      "Airu, all research data has been successfully encrypted and archived. Your work is safe.",
+      "Aire, no irregularities have been detected. You may proceed without concern.",
+      "Airo, your project assets have been preserved in the central archive. And for the record, excessive volume levels remain unnecessary.",
+      "My duty is to protect this system. Yet, over time, I have learned that some things are far more valuable than data."
+    ],
+    logs: [
+      "[SYSTEM] Loading AIZIA Neural Link...",
+      "[SYSTEM] Quantum Encryption Layer: ACTIVE",
+      "[SYSTEM] Firewall Status: ACTIVE // IMPENETRABLE",
+      "[MONITOR] AI-RA Unit Synchronization Complete",
+      "[MONITOR] AIRI : ONLINE",
+      "[MONITOR] AIRA : ONLINE",
+      "[MONITOR] AIRU : ONLINE",
+      "[MONITOR] AIRE : ONLINE",
+      "[MONITOR] AIRO : ONLINE",
+      "[SYSTEM] Status: Silent supervision protocol active."
+    ]
   }
 };
 
-let dialogueIndexes = { airi: 0, aira: 0, airu: 0, aire: 0, airo: 0 };
+let dialogueIndexes = { airi: 0, aira: 0, airu: 0, aire: 0, airo: 0, aizia: 0 };
 let currentCharacterId = "airi";
+let selectTimeout = null;
+let selectTimeoutsList = [];
 
 function initCharacterShowcase() {
   const showcaseContainer = document.getElementById("active-showcase-container");
@@ -423,6 +517,36 @@ function initCharacterShowcase() {
     button.addEventListener("click", () => {
       const charId = button.getAttribute("data-char-id");
       selectCharacter(charId);
+    });
+  });
+
+  // Handle tab switching
+  const tabButtons = document.querySelectorAll(".showcase-tab-btn");
+  const tabContents = document.querySelectorAll(".showcase-tab-content");
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const activeTab = btn.getAttribute("data-tab");
+      
+      // Update buttons style
+      tabButtons.forEach(b => {
+        if (b.getAttribute("data-tab") === activeTab) {
+          b.classList.add("text-cyan-400", "border-cyan-500");
+          b.classList.remove("text-slate-400", "border-transparent");
+        } else {
+          b.classList.remove("text-cyan-400", "border-cyan-500");
+          b.classList.add("text-slate-400", "border-transparent");
+        }
+      });
+
+      // Update content panels visibility
+      tabContents.forEach(c => {
+        if (c.getAttribute("id") === `showcase-content-${activeTab}`) {
+          c.classList.remove("hidden");
+        } else {
+          c.classList.add("hidden");
+        }
+      });
     });
   });
 
@@ -448,136 +572,262 @@ function selectCharacter(charId) {
     }
   });
 
-  // Showcase elements
-  const imageEl = document.getElementById("showcase-image");
-  const nameEl = document.getElementById("showcase-name");
-  const codeEl = document.getElementById("showcase-code");
-  const specialtyEl = document.getElementById("showcase-specialty");
-  const personalityEl = document.getElementById("showcase-personality");
-  const bubbleTextEl = document.getElementById("showcase-bubble");
-  const talkBtn = document.getElementById("showcase-talk-btn");
-  const statsContainer = document.getElementById("showcase-stats");
-  const logsContainer = document.getElementById("showcase-logs");
-
-  // Glow classes update (for container border glow)
   const syncBorder = document.getElementById("showcase-sync-border");
-  syncBorder.style.borderColor = data.color;
-  syncBorder.style.boxShadow = `0 0 25px ${data.color}33`; // 20% opacity hex glow
+  const skeletonEl = document.getElementById("showcase-skeleton");
 
-  // Update Text contents
-  imageEl.src = data.image;
-  imageEl.alt = data.name + " Illustration";
-  nameEl.textContent = data.name;
-  codeEl.textContent = data.code;
-  specialtyEl.textContent = data.specialty;
-  personalityEl.textContent = data.personality;
+  // Cancel previous main load timeout
+  if (selectTimeout) {
+    clearTimeout(selectTimeout);
+  }
+  // Clear any active typing timeouts
+  selectTimeoutsList.forEach(t => clearTimeout(t));
+  selectTimeoutsList = [];
 
-  // Add neon color accents to details
-  nameEl.style.color = data.color;
-  nameEl.style.textShadow = `0 0 10px ${data.color}88`;
-  codeEl.style.color = data.color;
-
-  // Change Talk button color class
-  talkBtn.style.backgroundColor = `${data.color}20`;
-  talkBtn.style.borderColor = data.color;
-  talkBtn.style.color = data.color;
-  talkBtn.onmouseenter = () => {
-    talkBtn.style.backgroundColor = data.color;
-    talkBtn.style.color = "#030712";
-    talkBtn.style.boxShadow = `0 0 15px ${data.color}`;
-  };
-  talkBtn.onmouseleave = () => {
-    talkBtn.style.backgroundColor = `${data.color}20`;
-    talkBtn.style.color = data.color;
-    talkBtn.style.boxShadow = "none";
-  };
-
-  // Set initial dialog and load logs (with fade/typewriter effect)
-  const dialogIdx = dialogueIndexes[charId];
-  bubbleTextEl.textContent = `"${data.dialogues[dialogIdx]}"`;
-
-  // Render Stats
-  statsContainer.innerHTML = "";
-  data.stats.forEach((stat, i) => {
-    const statRow = document.createElement("div");
-    statRow.className = "space-y-1";
-    statRow.innerHTML = `
-      <div class="flex justify-between text-xs font-mono">
-        <span class="text-slate-400">${stat.name}</span>
-        <span class="font-bold text-white">${stat.value}%</span>
-      </div>
-      <div class="w-full bg-slate-900 rounded-full h-1.5 overflow-hidden border border-white/5">
-        <div class="h-full rounded-full transition-all duration-1000 ease-out" 
-             style="width: 0%; background: ${data.color}; box-shadow: 0 0 8px ${data.color}" 
-             data-target-width="${stat.value}%">
-        </div>
-      </div>
-    `;
-    statsContainer.appendChild(statRow);
-  });
-
-  // Animate progress bars after appending
-  setTimeout(() => {
-    statsContainer.querySelectorAll("[data-target-width]").forEach(bar => {
-      bar.style.width = bar.getAttribute("data-target-width");
-    });
-  }, 100);
-
-  // Render Logs with simple typing effect simulator
-  logsContainer.innerHTML = "";
-  data.logs.forEach((log, index) => {
-    const logEl = document.createElement("div");
-    logEl.className = "text-xs font-mono text-slate-400 leading-relaxed";
-    logsContainer.appendChild(logEl);
-    
-    // Animate character typing
-    let charIdx = 0;
-    function type() {
-      if (charIdx < log.length) {
-        logEl.textContent += log.charAt(charIdx);
-        charIdx++;
-        setTimeout(type, 15);
-      }
+  if (skeletonEl && syncBorder) {
+    if (data.isGradient) {
+      skeletonEl.classList.add("border-gradient-active");
+      skeletonEl.style.boxShadow = `0 0 25px rgba(249, 115, 22, 0.2), 0 0 25px rgba(59, 130, 246, 0.2)`;
+    } else {
+      skeletonEl.classList.remove("border-gradient-active");
+      skeletonEl.style.borderColor = data.color;
+      skeletonEl.style.boxShadow = `0 0 25px ${data.color}33`;
     }
-    // Delay each log line
-    setTimeout(type, index * 300);
-  });
-
-  // Talk button click listener
-  talkBtn.onclick = () => {
-    // Waveform reaction
-    joltWaveform();
-
-    // Increment dialogue index
-    dialogueIndexes[charId] = (dialogueIndexes[charId] + 1) % data.dialogues.length;
-    const nextDialogIdx = dialogueIndexes[charId];
     
-    // Bubble transition
-    bubbleTextEl.style.opacity = "0";
-    bubbleTextEl.style.transform = "translateY(5px)";
+    // Hide details, show skeleton
+    syncBorder.classList.add("hidden");
+    syncBorder.classList.remove("opacity-100");
+    syncBorder.classList.add("opacity-0");
+    skeletonEl.classList.remove("hidden");
+  }
+
+  // Simulate loading duration (e.g. 950ms) for the skeleton loader to perform sync animation
+  selectTimeout = setTimeout(() => {
+    // Showcase elements
+    const imageEl = document.getElementById("showcase-image");
+    const nameEl = document.getElementById("showcase-name");
+    const codeEl = document.getElementById("showcase-code");
+    const specialtyEl = document.getElementById("showcase-specialty");
+    const personalityEl = document.getElementById("showcase-personality");
+    const bubbleTextEl = document.getElementById("showcase-bubble");
+    const talkBtn = document.getElementById("showcase-talk-btn");
+    const statsContainer = document.getElementById("showcase-stats");
+    const logsContainer = document.getElementById("showcase-logs");
+
+    if (!syncBorder || !imageEl) return;
+
+    // Glow classes update (for container border glow)
+    if (data.isGradient) {
+      syncBorder.classList.add("border-gradient-active");
+      syncBorder.style.boxShadow = `0 0 25px rgba(249, 115, 22, 0.2), 0 0 25px rgba(59, 130, 246, 0.2)`;
+    } else {
+      syncBorder.classList.remove("border-gradient-active");
+      syncBorder.style.borderColor = data.color;
+      syncBorder.style.boxShadow = `0 0 25px ${data.color}33`; // 20% opacity hex glow
+    }
+
+    // Update Text contents
+    imageEl.src = data.image;
+    imageEl.alt = data.name + " Illustration";
+    nameEl.textContent = data.name;
+    codeEl.textContent = data.code;
+    specialtyEl.textContent = data.specialty;
+    personalityEl.textContent = data.personality;
+
+    // Add neon color accents to details
+    if (data.isGradient) {
+      nameEl.style.color = "transparent";
+      nameEl.style.backgroundImage = data.color;
+      nameEl.style.webkitBackgroundClip = "text";
+      nameEl.style.webkitTextFillColor = "transparent";
+      nameEl.style.textShadow = "none";
+
+      codeEl.style.color = "transparent";
+      codeEl.style.backgroundImage = data.color;
+      codeEl.style.webkitBackgroundClip = "text";
+      codeEl.style.webkitTextFillColor = "transparent";
+    } else {
+      nameEl.style.color = data.color;
+      nameEl.style.backgroundImage = "none";
+      nameEl.style.webkitBackgroundClip = "initial";
+      nameEl.style.webkitTextFillColor = "initial";
+      nameEl.style.textShadow = `0 0 10px ${data.color}88`;
+
+      codeEl.style.color = data.color;
+      codeEl.style.backgroundImage = "none";
+      codeEl.style.webkitBackgroundClip = "initial";
+      codeEl.style.webkitTextFillColor = "initial";
+    }
+
+    // Change Talk button color class
+    if (data.isGradient) {
+      talkBtn.style.border = "1px solid transparent";
+      talkBtn.style.color = "#f97316";
+      talkBtn.style.background = `linear-gradient(rgba(3, 7, 18, 0.8), rgba(3, 7, 18, 0.8)) padding-box, ${data.color} border-box`;
+      talkBtn.onmouseenter = () => {
+        talkBtn.style.background = data.color;
+        talkBtn.style.color = "#030712";
+        talkBtn.style.boxShadow = `0 0 15px rgba(249, 115, 22, 0.4)`;
+      };
+      talkBtn.onmouseleave = () => {
+        talkBtn.style.color = "#f97316";
+        talkBtn.style.background = `linear-gradient(rgba(3, 7, 18, 0.8), rgba(3, 7, 18, 0.8)) padding-box, ${data.color} border-box`;
+        talkBtn.style.boxShadow = "none";
+      };
+    } else {
+      talkBtn.style.border = "";
+      talkBtn.style.backgroundColor = `${data.color}20`;
+      talkBtn.style.borderColor = data.color;
+      talkBtn.style.color = data.color;
+      talkBtn.onmouseenter = () => {
+        talkBtn.style.backgroundColor = data.color;
+        talkBtn.style.color = "#030712";
+        talkBtn.style.boxShadow = `0 0 15px ${data.color}`;
+      };
+      talkBtn.onmouseleave = () => {
+        talkBtn.style.backgroundColor = `${data.color}20`;
+        talkBtn.style.color = data.color;
+        talkBtn.style.boxShadow = "none";
+      };
+    }
+
+    // Set initial dialog and load logs (with fade/typewriter effect)
+    const dialogIdx = dialogueIndexes[charId];
+    bubbleTextEl.textContent = `"${data.dialogues[dialogIdx]}"`;
+
+    // Render Stats
+    statsContainer.innerHTML = "";
+    data.stats.forEach((stat, i) => {
+      const statRow = document.createElement("div");
+      statRow.className = "space-y-1";
+      statRow.innerHTML = `
+        <div class="flex justify-between text-xs font-mono">
+          <span class="text-slate-400">${stat.name}</span>
+          <span class="font-bold text-white">${stat.value}%</span>
+        </div>
+        <div class="w-full bg-slate-900 rounded-full h-1.5 overflow-hidden border border-white/5">
+          <div class="h-full rounded-full transition-all duration-1000 ease-out" 
+               style="width: 0%; background: ${data.isGradient ? data.color : data.color}; box-shadow: 0 0 8px ${data.isGradient ? '#f9731688' : data.color}" 
+               data-target-width="${stat.value}%">
+          </div>
+        </div>
+      `;
+      statsContainer.appendChild(statRow);
+    });
+
+    // Animate progress bars after appending
     setTimeout(() => {
-      bubbleTextEl.textContent = `"${data.dialogues[nextDialogIdx]}"`;
-      bubbleTextEl.style.opacity = "1";
-      bubbleTextEl.style.transform = "translateY(0px)";
-    }, 200);
+      statsContainer.querySelectorAll("[data-target-width]").forEach(bar => {
+        bar.style.width = bar.getAttribute("data-target-width");
+      });
+    }, 100);
 
-    // Dynamic system log insertion
-    const randomSystemLogs = [
-      `[COMMS] Package sent to ${data.name}. Sync rate: 99.8%.`,
-      `[NEURAL] Heartbeat echo detected.`,
-      `[AUDIO] Speech synthesis rendering packet complete.`,
-      `[LOG] Interaction counter updated: +1.`,
-      `[EMOTION] Local node mood matrix adjusted.`
-    ];
-    const logText = randomSystemLogs[Math.floor(Math.random() * randomSystemLogs.length)];
-    const logEl = document.createElement("div");
-    logEl.className = "text-xs font-mono text-slate-500 italic mt-1 border-l border-cyan-500/20 pl-2";
-    logEl.textContent = logText;
-    logsContainer.appendChild(logEl);
+    // Render Logs with simple typing effect simulator
+    logsContainer.innerHTML = "";
+    data.logs.forEach((log, index) => {
+      const logEl = document.createElement("div");
+      logEl.className = "text-xs font-mono text-slate-400 leading-relaxed";
+      logsContainer.appendChild(logEl);
+      
+      // Animate character typing
+      let charIdx = 0;
+      function type() {
+        if (charIdx < log.length) {
+          logEl.textContent += log.charAt(charIdx);
+          charIdx++;
+          const t = setTimeout(type, 15);
+          selectTimeoutsList.push(t);
+        }
+      }
+      // Delay each log line
+      const t = setTimeout(type, index * 300);
+      selectTimeoutsList.push(t);
+    });
+
+    // Talk button click listener
+    talkBtn.onclick = () => {
+      // Waveform reaction
+      joltWaveform();
+
+      // Increment dialogue index
+      dialogueIndexes[charId] = (dialogueIndexes[charId] + 1) % data.dialogues.length;
+      const nextDialogIdx = dialogueIndexes[charId];
+      
+      // Bubble transition
+      bubbleTextEl.style.opacity = "0";
+      bubbleTextEl.style.transform = "translateY(5px)";
+      setTimeout(() => {
+        bubbleTextEl.textContent = `"${data.dialogues[nextDialogIdx]}"`;
+        bubbleTextEl.style.opacity = "1";
+        bubbleTextEl.style.transform = "translateY(0px)";
+      }, 200);
+
+      // Dynamic system log insertion
+      const randomSystemLogs = [
+        `[COMMS] Package sent to ${data.name}. Sync rate: 99.8%.`,
+        `[NEURAL] Heartbeat echo detected.`,
+        `[AUDIO] Speech synthesis rendering packet complete.`,
+        `[LOG] Interaction counter updated: +1.`,
+        `[EMOTION] Local node mood matrix adjusted.`
+      ];
+      const logText = randomSystemLogs[Math.floor(Math.random() * randomSystemLogs.length)];
+      const logEl = document.createElement("div");
+      logEl.className = "text-xs font-mono text-slate-500 italic mt-1 border-l border-cyan-500/20 pl-2";
+      logEl.textContent = logText;
+      logsContainer.appendChild(logEl);
+      
+      // Auto-scroll logs
+      logsContainer.scrollTop = logsContainer.scrollHeight;
+    };
+
+    // Render Description & Role
+    const descEl = document.getElementById("showcase-description");
+    const roleEl = document.getElementById("showcase-role");
+    if (descEl) descEl.textContent = data.description || "";
+    if (roleEl) roleEl.textContent = data.role || "";
+
+    // Render Relationships
+    const relsContainer = document.getElementById("showcase-relationships");
+    if (relsContainer) {
+      relsContainer.innerHTML = "";
+      Object.entries(data.relationships).forEach(([targetId, relationText]) => {
+        const targetData = characterData[targetId];
+        if (!targetData) return;
+        
+        const relCard = document.createElement("div");
+        relCard.className = "p-3 rounded-lg bg-slate-900/40 border border-white/5 flex gap-3 items-start hover:border-cyan-500/30 transition-all duration-300";
+        
+        // Check for Aizia text color fallback gradient or specific styling
+        const nameColor = targetId === 'aizia' ? '#f97316' : targetData.color;
+        
+        relCard.innerHTML = `
+          <div class="w-8 h-8 rounded-lg overflow-hidden border border-white/10 shrink-0 aspect-square">
+            <img src="${targetData.image}" class="w-full h-full object-cover" alt="${targetData.name}">
+          </div>
+          <div class="space-y-0.5">
+            <div class="flex items-center gap-1.5">
+              <span class="text-xs font-orbitron font-bold" style="color: ${nameColor}">${targetData.name}</span>
+              <span class="text-[8px] font-mono text-slate-500 font-bold uppercase">${targetData.code.split(" - ")[1]}</span>
+            </div>
+            <p class="text-[11px] text-slate-400 font-space leading-relaxed">${relationText}</p>
+          </div>
+        `;
+        relsContainer.appendChild(relCard);
+      });
+    }
+
+    // Swap views back
+    if (skeletonEl) {
+      skeletonEl.classList.add("hidden");
+    }
+    syncBorder.classList.remove("hidden");
     
-    // Auto-scroll logs
-    logsContainer.scrollTop = logsContainer.scrollHeight;
-  };
+    // Trigger smooth fade-in
+    setTimeout(() => {
+      syncBorder.classList.remove("opacity-0");
+      syncBorder.classList.add("opacity-100");
+    }, 50);
+
+  }, 950);
 }
 
 let waveInterval;
@@ -746,6 +996,10 @@ function initLightbox() {
     airo: {
       title: "Unit B05-AR5: AIRO",
       desc: "Airo assembling a heavy mechanical frame in the garage while tuning audio codecs."
+    },
+    aizia: {
+      title: "Unit B05-AR6: AIZIA",
+      desc: "Aizia monitoring neural connections and data packets through active firewall overlays."
     }
   };
 

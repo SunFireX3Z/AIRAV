@@ -1000,6 +1000,10 @@ function initLightbox() {
     aizia: {
       title: "Unit B05-AR6: AIZIA",
       desc: "Aizia monitoring neural connections and data packets through active firewall overlays."
+    },
+    airavlogo: {
+      title: "AI-RA V Official Logo",
+      desc: "The official logo for the AI-RA V Project, representing the synergy of artificial intelligence and robotic assistance."
     }
   };
 

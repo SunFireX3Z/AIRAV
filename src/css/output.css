@@ -1865,6 +1865,9 @@
   .text-cyan-200 {
     color: var(--color-cyan-200);
   }
+  .text-cyan-300 {
+    color: var(--color-cyan-300);
+  }
   .text-cyan-400 {
     color: var(--color-cyan-400);
   }
@@ -2669,6 +2672,16 @@
       }
     }
   }
+  .hover\:shadow-cyan-400\/20 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 20%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-cyan-400) 20%, transparent) var(--tw-shadow-alpha), transparent);
+        }
+      }
+    }
+  }
   .hover\:shadow-cyan-400\/40 {
     &:hover {
       @media (hover: hover) {
@@ -2769,11 +2782,6 @@
       grid-column: span 4 / span 4;
     }
   }
-  .md\:col-span-6 {
-    @media (width >= 48rem) {
-      grid-column: span 6 / span 6;
-    }
-  }
   .md\:ml-32 {
     @media (width >= 48rem) {
       margin-left: calc(var(--spacing) * 32);
@@ -2797,11 +2805,6 @@
   .md\:h-96 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 96);
-    }
-  }
-  .md\:min-h-\[28rem\] {
-    @media (width >= 48rem) {
-      min-height: 28rem;
     }
   }
   .md\:w-96 {
